@@ -12,7 +12,7 @@ export class Interceptors {
   constructor() {
     this.instance = axios.create({
       baseURL: import.meta.env.VITE_APP_HOST,
-      timeout: 60,
+      timeout: 60000, // 请求超时时间
       headers: {
         'X-Requested-With': 'XMLHttpRequest'
       }
